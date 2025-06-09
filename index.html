@@ -31,48 +31,73 @@
 
 <body class="
 grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen
-md:grid-rows-12 md:gap-[36px]
+md:grid-rows-12 md:gap-[36px] md:px-12
 ">
     <header class="
     row-span-1 flex items-center justify-center bg-[#FADCD9] rounded-2xl
-    md:place-content-between md:p-5
+    md:place-content-between md:p-5 md:gap-3
     ">
         <!--Elementos tablet:-->
         <h1 class="
         text-[32px] italic font-light
-        md:text-[40px] md:text-start "> JULIA <span class="font-medium not-italic">HUANG </span></h1>
+        md:text-[2.2rem] md:text-start "> JULIA <span class="font-medium not-italic">HUANG </span></h1>
         <menu class="
-        hidden text-[24px] gap-10
+        hidden text-[24px] gap-9 font-light
         md:flex md:flex-row">
-            <li> <span>PROJECTS</span></li>
-            <li> <span>ABOUT </span></li>
-            <li> <span>CONTACT </span></li>
+            <li>PROJECTS</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
         </menu>
     </header>
 
     <main class="
     row-span-8 grid grid-cols-2 grid-rows-14 gap-x-3 gap-y-4
-    md: row-span-10
+    md:row-span-10 md:grid-cols-5 md:gap-x-10
     ">
-        <div class="row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]">
-            <span class="block p-4 text-[23px]/6 font-medium z-2">Artist Redefining <span
+        <div class="
+        row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]
+        md:col-span-3 md:row-span-4">
+            <span class="
+            block p-4 text-[23px]/6 font-medium z-2
+            md:text-[40px]/12 md:pt-15
+            
+            ">Artist Redefining <span
                     class="font-light">Architecture</span> with
                 AI-Driven Design</span>
             <img class="absolute right-0 top-0" src="./imgs/FlowerVector_Phone.svg" alt="">
         </div>
 
-        <img class="row-span-5 object-cover h-full w-full rounded-2xl" src="./imgs/PORTRAIT_Phone.png" alt=""></div>
+        <img class="
+        row-span-5 object-cover h-full w-full rounded-2xl
+        md:col-span-2
+        " src="./imgs/PORTRAIT_Phone.png" alt=""></div>
 
-        <button class="row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-[36px] [font-weight:500]">Contact me</button>
+        <button class="
+        row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-[36px] [font-weight:500]
+        md:row-span-1 md:col-span-3
+        ">Contact me</button>
 
-        <div class="row-span-8 col-span-2 rounded-2xl flex-column place-items-center bg-[#FADCD9]">
-            <div class="mx-4 mt-8 mb-4 relative inline-flex">
-                <h3 class="absolute text-[36px] text-white left-3 text-shadow-2xs">Musea</h3>
-                <img class="object-cover rounded-2xl" src="./imgs/musea.png" alt="">
+        <div class="
+        row-span-8 col-span-2 rounded-2xl flex flex-col place-items-center bg-[#FADCD9]
+        md:col-span-5 md:flex-row md:place-items-start 
+        ">
+            <div class="
+            mx-4 mt-8 mb-4 relative inline-flex
+            md:flex md:flex-col md:grow-3
+            ">
+                <h3 class="absolute text-[36px] text-white left-3 text-shadow-2xs
+                md:static md:text-black md:text-[48px] md:font-medium
+                ">Musea</h3>
+                <img class="
+                object-cover rounded-2xl
+                md: w-60% object-contain" src="./imgs/musea.png" alt="">
             </div>
 
-            <menu class="flex justify-center text-[24px]">
-                <li class="px-2 border-r-[3px] border-[#F8AFA6]">Musea</li>
+            <menu class="
+            flex justify-center text-[24px]
+            md:flex-col md:grow-3 md:text-[48px]">
+                <li class="px-2 border-r-[3px] border-[#F8AFA6]
+                ">Musea</li>
                 <li class="px-2 border-r-[3px] border-[#F8AFA6]">Elara</li>
                 <li class="px-2 border-r-[3px] border-[#F8AFA6]">Verve</li>
                 <li class="px-2">Zephyr</li>
