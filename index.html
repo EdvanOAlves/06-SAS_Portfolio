@@ -29,25 +29,31 @@
     -->
 </head>
 
-<body class="grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen">
+<body class="
+grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen
+md:grid-rows-12 md:gap-[36px]
+">
     <header class="
-    row-span-1 grid text-center place-items-center bg-[#FADCD9] rounded-2xl
-    md:grid-cols-2 place-items-start items-center
+    row-span-1 flex items-center justify-center bg-[#FADCD9] rounded-2xl
+    md:place-content-between md:p-5
     ">
         <!--Elementos tablet:-->
         <h1 class="
-        text-[32px] italic 
-        md: text-[40px] text-start"> JULIA <span class="font-bold not-italic">HUANG </span></h1>
+        text-[32px] italic font-light
+        md:text-[40px] md:text-start "> JULIA <span class="font-medium not-italic">HUANG </span></h1>
         <menu class="
-        hidden 
-        md:flex flex-row">
-            <li class="grow text-[16px]">PROJECT</li>
-            <li class="grow text-[16px]">ABOUT</li>
-            <li class="grow text-[16px]">CONTACT</li>
+        hidden text-[24px] gap-10
+        md:flex md:flex-row">
+            <li> <span>PROJECTS</span></li>
+            <li> <span>ABOUT </span></li>
+            <li> <span>CONTACT </span></li>
         </menu>
     </header>
 
-    <main class="row-span-8 grid grid-cols-2 grid-rows-14 gap-x-3 gap-y-4">
+    <main class="
+    row-span-8 grid grid-cols-2 grid-rows-14 gap-x-3 gap-y-4
+    md: row-span-10
+    ">
         <div class="row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]">
             <span class="block p-4 text-[23px]/6 font-medium z-2">Artist Redefining <span
                     class="font-light">Architecture</span> with
