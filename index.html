@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Huang Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+        rel="stylesheet">
+
 
     <!--Cores para Referencia:
-    Background : #F9F1F0
+    Background : #F9F1F0s
     Primary: #FADCD9
     Secondary: #F8AFA6 
     Text: 00000 (black)
     
     -->
 </head>
-<body class="grid-col-5 p-5 gap-[5px]">
-    <header class = "grid grid-rows-2 text-center bg-[#FADCD9] gap-9 rounded-2xl">
-        <h1 class="text-[32px]"> Julia Huang</h1>
-        <menu class ="flex flex-row text-[16px]">
-            <li class="grow">PROJECT</li>
-            <li class="grow">ABOUT</li>
-            <li class="grow">CONTACT</li>
+
+<body class="grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen">
+    <header class="row-span-1 grid text-center place-items-center bg-[#FADCD9]  rounded-2xl">
+        <!--Elementos tablet: grid-rows-2 gap-5-->
+        <h1 class="text-[32px] italic"> JULIA <span class="font-bold not-italic">HUANG </span></h1>
+        <menu class="hidden md:flex flex-row">
+            <li class="grow text-[16px]">PROJECT</li>
+            <li class="grow text-[16px]">ABOUT</li>
+            <li class="grow text-[16px]">CONTACT</li>
         </menu>
     </header>
-    
+
     <main>
         <div class="bg-[#FADCD9]">
             <span>Artist Redefining Architecture with AI-Driven Design</span>
@@ -38,7 +47,7 @@
             <h3>Musea</h3>
             <img src="" alt="">
 
-            <menu ">
+            <menu>
                 <li>Musea</li>
                 <li>Elara</li>
                 <li>Verve</li>
@@ -55,4 +64,5 @@
         </menu>
     </footer>
 </body>
+
 </html>
