@@ -18,16 +18,29 @@
     Background : #F9F1F0s
     Primary: #FADCD9
     Secondary: #F8AFA6 
-    Text: 00000 (black)
-    
+    Text: 000000 (black)
+    -->
+
+    <!--Responsividade:
+        0-767: celular
+    md: 768-1023: tablet
+    lg: 1024+: desktop
+
     -->
 </head>
 
 <body class="grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen">
-    <header class="row-span-1 grid text-center place-items-center bg-[#FADCD9]  rounded-2xl">
-        <!--Elementos tablet: grid-rows-2 gap-5-->
-        <h1 class="text-[32px] italic"> JULIA <span class="font-bold not-italic">HUANG </span></h1>
-        <menu class="hidden md:flex flex-row">
+    <header class="
+    row-span-1 grid text-center place-items-center bg-[#FADCD9] rounded-2xl
+    md:grid-cols-2 place-items-start items-center
+    ">
+        <!--Elementos tablet:-->
+        <h1 class="
+        text-[32px] italic 
+        md: text-[40px] text-start"> JULIA <span class="font-bold not-italic">HUANG </span></h1>
+        <menu class="
+        hidden 
+        md:flex flex-row">
             <li class="grow text-[16px]">PROJECT</li>
             <li class="grow text-[16px]">ABOUT</li>
             <li class="grow text-[16px]">CONTACT</li>
@@ -35,19 +48,20 @@
     </header>
 
     <main class="row-span-8 grid grid-cols-2 grid-rows-14 gap-x-3 gap-y-4">
-        <div class="row-span-5 rounded-2xl flex items-center bg-[#FADCD9]">
-            <span class="block p-4 text-[23px]/6 font-medium">Artist Redefining <span
+        <div class="row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]">
+            <span class="block p-4 text-[23px]/6 font-medium z-2">Artist Redefining <span
                     class="font-light">Architecture</span> with
                 AI-Driven Design</span>
+            <img class="absolute right-0 top-0" src="./imgs/FlowerVector_Phone.svg" alt="">
         </div>
 
         <img class="row-span-5 object-cover h-full w-full rounded-2xl" src="./imgs/PORTRAIT_Phone.png" alt=""></div>
 
         <button class="row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-[36px] [font-weight:500]">Contact me</button>
 
-        <div class="row-span-8 col-span-2 rounded-2xl flex-column bg-[#FADCD9]">
-            <div class="mx-4 mt-8 mb-4">
-                <h3 class="absolute top text-[36px] text-white p-3 text-shadow-2xs">Musea</h3>
+        <div class="row-span-8 col-span-2 rounded-2xl flex-column place-items-center bg-[#FADCD9]">
+            <div class="mx-4 mt-8 mb-4 relative inline-flex">
+                <h3 class="absolute text-[36px] text-white left-3 text-shadow-2xs">Musea</h3>
                 <img class="object-cover rounded-2xl" src="./imgs/musea.png" alt="">
             </div>
 
