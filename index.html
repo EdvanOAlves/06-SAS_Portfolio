@@ -32,6 +32,7 @@
 <body class="
 grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen
 md:grid-rows-12 md:gap-7 md:px-12
+lg:grid-rows-8
 ">
     <header class="
     row-span-1 flex items-center justify-center bg-[#FADCD9] rounded-2xl
@@ -53,10 +54,12 @@ md:grid-rows-12 md:gap-7 md:px-12
     <main class="
     row-span-8 grid grid-cols-2 grid-rows-14 gap-x-3 gap-y-4
     md:row-span-10 md:grid-cols-8 md:grid-rows-10 md:gap-x-6
+    lg:row-span-7 lg:grid-cols-13 grid-rows-7
     ">
         <div class="
         row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]
-        md:col-span-5 md:row-span-3">
+        md:col-span-5 md:row-span-3
+        lg:row-span-6">
             <span class="
             block p-4 text-2xl/6 font-medium z-2
             md:text-4xl/12 md:pt-15
@@ -70,16 +73,24 @@ md:grid-rows-12 md:gap-7 md:px-12
         <img class="
         row-span-5 object-cover h-full w-full rounded-2xl
         md:col-span-3 md:row-span-4
+        lg:row-span-6
         " src="./imgs/PORTRAIT_Phone.png" alt=""></div>
+
+        <div class="hidden bg-[#FADCD9]
+        lg:block lg: row-span-5 col-span-5">
+            <span>Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative expression. Based in LA, she crafts unique digital art experiences accessible globally.</span>
+        </div>
 
         <button class="
         row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-4xl [font-weight:500]
         md:row-span-1 md:col-span-5
+        lg:row-span-4
         ">Contact me</button>
 
         <div class="
         row-span-8 col-span-2 rounded-2xl flex flex-col place-items-center bg-[#FADCD9]
         md:col-span-8 md:row-span-7 md:flex-row md:place-items-start 
+        lg:row-span-7
         ">
             <div class="
             mx-4 mt-8 mb-4 relative inline-flex
@@ -111,7 +122,8 @@ md:grid-rows-12 md:gap-7 md:px-12
     </main>
 
     <footer class="row-span-1 rounded-2xl flex justify-center items-center bg-[#FADCD9]
-    md:row-span-1">
+    md:row-span-1
+    ">
         <menu class="grid grid-cols-3 text-center gap-10 text-2xl font-light
         md:text-4xl">
             <li>INSTAGRAM</li>
