@@ -31,11 +31,11 @@
 
 <body class="
 grid grid-rows-10 px-3 py-4 gap-[22px] font-[Poppins] h-screen
-md:grid-rows-12 md:gap-[36px] md:px-12
+md:grid-rows-12 md:gap-7 md:px-12
 ">
     <header class="
     row-span-1 flex items-center justify-center bg-[#FADCD9] rounded-2xl
-    md:place-content-between md:p-5 md:gap-3
+    md:row-span-1 md:place-content-between md:p-5 md:gap-3
     ">
         <!--Elementos tablet:-->
         <h1 class="
@@ -52,11 +52,11 @@ md:grid-rows-12 md:gap-[36px] md:px-12
 
     <main class="
     row-span-8 grid grid-cols-2 grid-rows-14 gap-x-3 gap-y-4
-    md:row-span-10 md:grid-cols-5 md:gap-x-10
+    md:row-span-10 md:grid-cols-8 md:grid-rows-10 md:gap-x-6
     ">
         <div class="
         row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]
-        md:col-span-3 md:row-span-4">
+        md:col-span-5 md:row-span-3">
             <span class="
             block p-4 text-2xl/6 font-medium z-2
             md:text-4xl/12 md:pt-15
@@ -69,21 +69,21 @@ md:grid-rows-12 md:gap-[36px] md:px-12
 
         <img class="
         row-span-5 object-cover h-full w-full rounded-2xl
-        md:col-span-2
+        md:col-span-3 md:row-span-4
         " src="./imgs/PORTRAIT_Phone.png" alt=""></div>
 
         <button class="
         row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-4xl [font-weight:500]
-        md:row-span-1 md:col-span-3
+        md:row-span-1 md:col-span-5
         ">Contact me</button>
 
         <div class="
         row-span-8 col-span-2 rounded-2xl flex flex-col place-items-center bg-[#FADCD9]
-        md:col-span-5 md:flex-row md:place-items-start 
+        md:col-span-8 md:row-span-7 md:flex-row md:place-items-start 
         ">
             <div class="
             mx-4 mt-8 mb-4 relative inline-flex
-            md:flex md:flex-col md:grow-3
+            md:flex md:flex-col md:grow-3 md:gap-8
             ">
                 <h3 class="absolute text-4xl text-white left-3 text-shadow-2xs
                 md:static md:text-black md:text-5xl md:font-medium
@@ -94,19 +94,26 @@ md:grid-rows-12 md:gap-[36px] md:px-12
             </div>
 
             <menu class="
-            flex justify-center text-2xl pb-3 
-            md:flex-col md:grow-3 md:text-5xl ">
+            flex justify-center text-2xl pb-3
+            md:flex-col md:text-5xl md:pt-27 md:px-20 md:gap-27">
                 <li class="px-2 border-r-[3px] border-[#F8AFA6]
+                md:hidden
                 ">Musea</li>
-                <li class="px-2 border-r-[3px] border-[#F8AFA6]">Elara</li>
-                <li class="px-2 border-r-[3px] border-[#F8AFA6]">Verve</li>
-                <li class="px-2">Zephyr</li>
+                <li class="px-2 border-r-[3px] border-[#F8AFA6]
+                md:border-r-0 md:border-b-4
+                ">Elara</li>
+                <li class="px-2 border-r-[3px] border-[#F8AFA6]
+                md:border-r-0 md:border-b-4">Verve</li>
+                <li class="px-2 border-[#F8AFA6]
+                md:border-r-0 md:border-b-4">Zephyr</li>
             </menu>
         </div>
     </main>
 
-    <footer class="row-span-1 rounded-2xl flex justify-center items-center bg-[#FADCD9]">
-        <menu class="grid grid-cols-3 text-center gap-10 text-xl font-light">
+    <footer class="row-span-1 rounded-2xl flex justify-center items-center bg-[#FADCD9]
+    md:row-span-1">
+        <menu class="grid grid-cols-3 text-center gap-10 text-2xl font-light
+        md:text-4xl">
             <li>INSTAGRAM</li>
             <li>TWITTER</li>
             <li>LINKEDIN</li>
