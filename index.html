@@ -45,7 +45,8 @@ xl:grid-rows-8 xl:col-span-9
         md:text-3xl md:text-start "> JULIA <span class="font-medium not-italic">HUANG </span></h1>
         <menu class="
         hidden text-2xl gap-9 font-light
-        md:flex md:flex-row">
+        md:flex md:flex-row
+        xl:text-base">
             <li>PROJECTS</li>
             <li>ABOUT</li>
             <li>CONTACT</li>
@@ -60,12 +61,12 @@ xl:grid-rows-8 xl:col-span-9
         <div class="
         row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9]
         md:col-span-2 md:row-span-3
-        xl:row-span-3 xl:col-span-5">
+        xl:row-span-3 xl:col-span-5 xl:items-end">
         <!--testar configuração do text em md depois-->
             <span class="
             block p-4 text-2xl/6 font-medium z-2
             md:text-4xl/12 md:pt-15 
-            xl:text-5xl
+            xl:text-5xl xl:pb-21 font-semibold
             ">Artist Redefining <span class="font-light">Architecture</span> with
                 AI-Driven Design</span>
             <img class="absolute right-0 top-0" src="./imgs/FlowerVector_Phone.svg" alt="">
@@ -77,17 +78,17 @@ xl:grid-rows-8 xl:col-span-9
             xl:row-span-3 xl:col-span-4
             " src="./imgs/PORTRAIT_Phone.png" alt=""></div>
 
-        <div class="hidden bg-[#FADCD9]
+        <div class="hidden bg-[#FADCD9] font-light rounded-2xl
             md:hidden 
-            xl:block xl:row-span-2 xl:col-span-4">
-            <span class="text-xl">Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative
+            xl:flex xl:row-span-2 xl:col-span-4 xl:items-end">
+            <span class="text-lg  pl-4 pr-18 pb-12">Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative
                 expression. Based in LA, she crafts unique digital art experiences accessible globally.</span>
         </div>
 
         <button class="
             row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-4xl [font-weight:500]
             md:row-span-1 md:col-span-2
-            xl:row-span-2 xl:col-span-5
+            xl:row-span-2 xl:col-span-5 xl:text-5xl xl:flex xl:items-end xl:pb-13 xl:pl-6
             ">Contact me</button>
     </main>
 
@@ -97,33 +98,42 @@ xl:grid-rows-8 xl:col-span-9
         <div class="
             row-span-4 col-span-2 rounded-2xl flex flex-col place-items-center bg-[#FADCD9]
             md:row-span-5 md:flex-row md:place-items-start 
-            xl:row-span-7
+            xl:row-span-7 xl:grid xl:grid-rows-2
             ">
             <div class="
             mx-4 mt-8 mb-4 relative inline-flex
             md:flex md:flex-col md:grow-3 md:gap-8
+            xl:row-span-1
             ">
                 <h3 class="absolute text-4xl text-white left-3 text-shadow-2xs
                 md:static md:text-black md:text-5xl md:font-medium
+                xl:text-2xl
                 ">Musea</h3>
                 <img class="
                 object-cover rounded-2xl
-                md: w-60% object-contain" src="./imgs/musea.png" alt="">
+                md: w-60% md:object-contain" src="./imgs/musea.png" alt="">
+                <!--w-60% tá fazendo alguma coisa? preciso testar depois-->
             </div>
 
             <menu class="
                 flex justify-center text-2xl pb-3
-                md:flex-col md:text-5xl md:pt-27 md:px-20 md:gap-27">
+                md:flex-col md:text-5xl md:pt-27 md:px-20 md:gap-27
+                xl:w-full xl:text-2xl xl:row-span-1 xl:gap-0 xl:px-6 xl:pt-10">
                 <li class="px-2 border-r-[3px] border-[#F8AFA6]
                     md:hidden
+                    
                 ">Musea</li>
                 <li class="px-2 border-r-[3px] border-[#F8AFA6]
                     md:border-r-0 md:border-b-4
+                    xl:border-b-3 xl:border-t-3 xl:py-10
                 ">Elara</li>
                 <li class="px-2 border-r-[3px] border-[#F8AFA6]
-                    md:border-r-0 md:border-b-4">Verve</li>
+                    md:border-r-0 md:border-b-4
+                    xl:border-b-3 xl:py-10
+                    ">Verve</li>
                 <li class="px-2 border-[#F8AFA6]
-                md:border-r-0 md:border-b-4">Zephyr</li>
+                    md:border-r-0 md:border-b-4
+                    xl:border-b-0 xl:py-10">Zephyr</li>
             </menu>
         </div>
 
@@ -131,7 +141,8 @@ xl:grid-rows-8 xl:col-span-9
         md:row-span-1
         ">
             <menu class="flex flex-row place-content-between text-center w-full gap-2 text-2xl font-light px-3
-            md:text-4xl">
+            md:text-4xl
+            xl:text-base xl:p-14">
                 <li class="col-span-1 block">INSTAGRAM</li>
                 <li class="col-span-1 block">TWITTER</li>
                 <li class="col-span-1 block">LINKEDIN</li>
