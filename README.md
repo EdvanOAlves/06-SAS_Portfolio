@@ -1,4 +1,4 @@
-"# 06-SAS_Portfolio" 
+# 06-SAS_Portfolio
 
 Situação de Atividade Somativa para aplicação do conteúdo estudado no primeiro Semetre em HTML, CSS e Tailwind CSS.
 Tendo como proposta criar variações no Figma em tablet e celular partindo de um layout para desktop e trazer para o html utilizando o Tailwind para formatação e responsividade.
