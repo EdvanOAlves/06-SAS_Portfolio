@@ -24,7 +24,7 @@
     <!--Responsividade:
         0-767: celular
     md: 768-1023: tablet
-    lg: 1024+: desktop
+    xl: 1280+: desktop
 
     -->
 </head>
@@ -78,13 +78,12 @@ xl:grid-rows-8 xl:col-span-9
             row-span-5 object-cover h-full w-full rounded-2xl
             md:col-span-1 md:row-span-4
             xl:row-span-3 xl:col-span-4
-            " src="./imgs/PORTRAIT_Phone.png" alt=""></div>
+            " src="./imgs/PORTRAIT.svg" alt=""></div>
 
-        <div class="hidden bg-[#FADCD9] font-light rounded-2xl
-            md:hidden 
-            xl:grid xl:grid-rows-7 xl:row-span-2 xl:col-span-4 xl:items-start p-7">
+        <div class="hidden bg-[#FADCD9] font-light rounded-2xl 
+            xl:flex flex-col place-content-between row-span-2 xl:col-span-4 xl:items-start p-7">
             <img src="./imgs/AboutCircleVector.svg" alt="" class="row-span-2">
-            <span class="text-lg/6 pr-10 pb-12 row-span-4">Julia Huang is an innovative AI artist, renowned for blending
+            <span class="text-[3/4vw] pr-10 pb-5">Julia Huang is an innovative AI artist, renowned for blending
                 cutting-edge technology with creative
                 expression. Based in LA, she crafts unique digital art experiences accessible globally.</span>
         </div>
@@ -126,12 +125,12 @@ xl:grid-rows-8 xl:col-span-9
                     md:static md:text-black md:text-5xl md:font-medium
                     xl:text-2xl
                     ">Musea</h3>
-                    <img class="hidden lg:inline w-6" 
+                    <img class="hidden xl:inline w-6" 
                     src="./imgs/ExtendVector.svg" alt="">
                 </div>
                 <div class="flex flex-row w-auto">
                     <img class="rounded-2xl w-full object-cover
-                    md:max-h-[420px] 
+                    md:max-h-[400px] 
                     xl:max-h-[25vh]
                     " src="./imgs/musea.png" alt="">
                 </div>
