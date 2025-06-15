@@ -62,7 +62,7 @@ xl:grid-rows-8 xl:col-span-9
         row-span-5 rounded-2xl relative flex items-center bg-[#FADCD9] overflow-hidden
         md:col-span-2 md:row-span-3
         xl:row-span-3 xl:col-span-5 xl:items-end">
-        <!--testar configuração do text em md depois-->
+            <!--testar configuração do text em md depois-->
             <span class="block p-4 text-2xl/6 font-medium z-2
             md:text-5xl md:pt-15 font- 
             xl:text-5xl xl:pb-21 font-semibold
@@ -70,6 +70,7 @@ xl:grid-rows-8 xl:col-span-9
                 AI-Driven Design</span>
             <img class="absolute -right-[32px] top-0 w-1/2
             md:max-h-82 md:-right-[102px] md:-top-[95px]
+            xl:mas-h-none xl:w-[120px] xl:right-12 xl:top-12
             " src="./imgs/FlowerVector.svg" alt="">
         </div>
 
@@ -81,24 +82,38 @@ xl:grid-rows-8 xl:col-span-9
 
         <div class="hidden bg-[#FADCD9] font-light rounded-2xl
             md:hidden 
-            xl:flex xl:row-span-2 xl:col-span-4 xl:items-end">
-            <span class="text-lg  pl-4 pr-18 pb-12">Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative
+            xl:grid xl:grid-rows-7 xl:row-span-2 xl:col-span-4 xl:items-start p-7">
+            <img src="./imgs/AboutCircleVector.svg" alt="" class="row-span-2">
+            <span class="text-lg/6 pr-10 pb-12 row-span-4">Julia Huang is an innovative AI artist, renowned for blending
+                cutting-edge technology with creative
                 expression. Based in LA, she crafts unique digital art experiences accessible globally.</span>
         </div>
 
         <button class="
             row-span-2 col-span-2 rounded-2xl bg-[#F8AFA6] text-4xl [font-weight:500]
             md:row-span-1 md:col-span-2
-            xl:row-span-2 xl:col-span-5 xl:text-5xl xl:flex xl:items-end xl:pb-13 xl:pl-6
-            ">Contact me</button>
+            xl:row-span-2 xl:col-span-5 xl:text-5xl xl:flex xl:items-start xl:pb-13 xl:pl-6 xl:flex-col xl:p-4 xl:place-content-between
+            ">
+            <div class="hidden
+            xl:flex text-base/5 font-light w-full place-content-between">
+                <span class="w-25 text-start">
+                    Have some questions?
+                </span>
+                <img src="./imgs/ExtendVector.svg" alt="" class="w-7">
+            </div>
+
+            <span class="">
+                Contact me
+            </span>
+        </button>
     </main>
 
     <aside class="row-span-5 grid grid-rows-5 grid-cols-1 gap-y-4
-    md:row-span-7 grid-rows-6
+    md:row-span-7 md:grid-rows-6 
     xl:row-span-7 xl:col-span-3 xl:grid-rows-8">
         <div class="
             row-span-5 col-span-2 rounded-2xl flex flex-col place-items-center bg-[#FADCD9] grid-rows-5
-            md:row-span-5 md:flex-row md:place-items-start 
+            md:row-span-5 md:flex-row md:place-items-start md:
             xl:row-span-7 xl:grid xl:grid-rows-2 
             ">
             <div class="
@@ -106,11 +121,15 @@ xl:grid-rows-8 xl:col-span-9
             md:flex md:flex-col md:grow-3 md:gap-8
             xl:row-span-1
             ">
-                <h3 class="absolute text-4xl text-white left-3 text-shadow-2xs
-                md:static md:text-black md:text-5xl md:font-medium
-                xl:text-2xl
-                ">Musea</h3>
-                <div class= "flex flex-row w-auto">
+                <div class="xl: flex place-content-between">
+                    <h3 class="absolute text-4xl text-white left-3 text-shadow-2xs
+                    md:static md:text-black md:text-5xl md:font-medium
+                    xl:text-2xl
+                    ">Musea</h3>
+                    <img class="hidden lg:inline w-6" 
+                    src="./imgs/ExtendVector.svg" alt="">
+                </div>
+                <div class="flex flex-row w-auto">
                     <img class="rounded-2xl w-full object-cover
                     md:max-h-[420px] 
                     xl:max-h-[25vh]
@@ -118,7 +137,8 @@ xl:grid-rows-8 xl:col-span-9
                 </div>
             </div>
 
-            <menu class="
+            <menu
+                class="
                 flex justify-center text-[5vw] pb-3 row-span-1 text-[#F8AFA6] max-h-[40px]
                 md:max-h-none md:grid md:grid-rows-3 md:text-5xl md:pt-27 md:px-20 h- md:gap-[70%] md:text-black
                 xl:grid-cols-1 xl:row-span-1 xl:w-full xl:text-2xl xl:gap-0 xl:px-4 xl:pt-10 xl:h-full xl:justify-start items-center">
